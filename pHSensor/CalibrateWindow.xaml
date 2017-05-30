@@ -1,0 +1,47 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="pHSensor.CalibrateWindow"
+    xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf"
+	x:Name="Window"
+	Title="Calibrate"
+	Width="640" Height="474">
+    <Window.Resources>
+        <CollectionViewSource Filter="CollectionViewSourceFilter" Source="{Binding Source={x:Static Application.Current}, Path=Curve.Parameters}" x:Key="paras">
+        </CollectionViewSource>
+    </Window.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Label Content="Sigmoid: Boltzmann" Margin="0,0,172,4" HorizontalAlignment="Right" Height="26" VerticalAlignment="Bottom" />
+
+        <Button Content="Calibrate" HorizontalAlignment="Right" Margin="0,366,10,0" VerticalAlignment="Top" Width="150" Click="CalibrateClick" Height="43"/>
+        <Label Content="Chi-square:" HorizontalAlignment="Left" Margin="10,0,0,1" Height="29" VerticalAlignment="Bottom"/>
+        <Label x:Name="chi2" Content="0" HorizontalAlignment="Left" Margin="80,0,0,1" Width="60" Height="29" VerticalAlignment="Bottom"/>
+
+        <GroupBox Header="Parameters" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="150">
+            <DataGrid x:Name="TblParameters" CanUserAddRows="False" ItemsSource="{Binding Source={StaticResource paras}}" Height="150"  VerticalAlignment="Top" ColumnWidth="*" AutoGenerateColumns="False" HorizontalAlignment="Right" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" IsReadOnly="True" Binding="{Binding Name}" Header="Name"/>
+                    <DataGridTextColumn Width="*" Binding="{Binding Value}" Header="Value"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+        <GroupBox Header="Datapoints" Margin="0,188,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="150">
+            <DataGrid x:Name="TblDataPoints" CurrentCellChanged="TblDataPointsCurrentCellChanged" ItemsSource="{Binding DataPoints, Source={x:Static Application.Current}}"  HorizontalAlignment="Right" Height="150" VerticalAlignment="Top" ColumnWidth="*" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" Header="pH" Binding="{Binding Signal}"/>
+                    <DataGridTextColumn Width="*" Header="Signal" Binding="{Binding pH}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="10,10,172,35">
+            <oxy:Plot x:Name="PltVisual" Margin="0,0,0,0">
+                <oxy:Plot.Axes>
+                    <oxy:LinearAxis Position="Left" Minimum="0" Maximum="10" MajorStep="1" MajorGridlineStyle="Dot" MinorGridlineStyle="Dot" Title="pH" />
+                    <oxy:LinearAxis Position="Bottom" Minimum="0" Maximum="14" MajorStep="1" MajorGridlineStyle="Dot" MinorGridlineStyle="Dot" Title="Signal" />
+                </oxy:Plot.Axes>
+                <oxy:ScatterSeries Title="Data points" DataFieldX="Signal" DataFieldY="pH" MarkerType="Cross" MarkerSize="5" MarkerStroke="RoyalBlue" ItemsSource="{Binding DataPoints, Source={x:Static Application.Current}}" />
+                <oxy:LineSeries x:Name="line" Title="Fitted curve" DataFieldX="Signal" DataFieldY="pH" MarkerSize="5" Color="ForestGreen" />
+            </oxy:Plot>
+        </Border>
+    </Grid>
+</Window>

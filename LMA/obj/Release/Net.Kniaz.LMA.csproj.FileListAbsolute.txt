@@ -1,0 +1,13 @@
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\bin\Release\Net.Kniaz.LMA.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\bin\Release\Net.Kniaz.LMA.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\bin\Release\GeneralMatrix.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\bin\Release\nunit.framework.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\bin\Release\GeneralMatrix.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\obj\Release\Net.Kniaz.LMA.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\obj\Release\Net.Kniaz.LMA.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\LMA\obj\Release\Net.Kniaz.LMA.csprojResolveAssemblyReference.cache
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\bin\Release\Net.Kniaz.LMA.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\bin\Release\Net.Kniaz.LMA.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\bin\Release\GeneralMatrix.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\obj\Release\Net.Kniaz.LMA.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\obj\Release\Net.Kniaz.LMA.pdb

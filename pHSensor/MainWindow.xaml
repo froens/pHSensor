@@ -1,0 +1,147 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:componentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        xmlns:local="clr-namespace:pHSensor"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxyplot="http://oxyplot.org/wpf"
+        mc:Ignorable="d" x:Class="pHSensor.MainWindow"
+        Icon="Resources/favicon.ico"
+        Title="pH-Sensor" Height="747" Width="802">
+    <Window.Resources>
+        <local:InvertBooleanConverter x:Key="BoolConvert"/>
+        <CollectionViewSource Source="{Binding Measurements, Source={x:Static Application.Current}}" x:Key="CVSMeasurements">
+            <CollectionViewSource.SortDescriptions>
+                <componentModel:SortDescription PropertyName="WaveLength" Direction="Ascending"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+        <CollectionViewSource Source="{Binding DarkMeasurements, Source={x:Static Application.Current}}" x:Key="CVSDarkMeasurements">
+            <CollectionViewSource.SortDescriptions>
+                <componentModel:SortDescription PropertyName="WaveLength" Direction="Ascending"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+        <CollectionViewSource Source="{Binding AMeasures, Source={x:Static Application.Current}}" x:Key="CVSAArea">
+            <CollectionViewSource.SortDescriptions>
+                <componentModel:SortDescription PropertyName="WaveLength" Direction="Ascending"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+        <CollectionViewSource Source="{Binding BMeasures, Source={x:Static Application.Current}}" x:Key="CVSBArea">
+            <CollectionViewSource.SortDescriptions>
+                <componentModel:SortDescription PropertyName="WaveLength" Direction="Ascending"/>
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </Window.Resources>
+    <Window.DataContext>
+        <Binding>
+            <Binding.RelativeSource>
+                <RelativeSource Mode="Self"></RelativeSource>
+            </Binding.RelativeSource>
+        </Binding>
+    </Window.DataContext>
+    <Window.CommandBindings>
+        <CommandBinding Command="Close" Executed="ShowFullScreen" />
+    </Window.CommandBindings>
+
+    <Window.InputBindings>
+        <KeyBinding Command="Close" Key="F11" />
+    </Window.InputBindings>
+    <StackPanel Margin="0,0,0,0">
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open Config"  Click="OpenConfigClick">
+                        <MenuItem.Icon>
+                            <Image Source="Resources/Open.png"></Image>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Save Config" Click="SaveConfigClick">
+                        <MenuItem.Icon>
+                            <Image Source="Resources/Save.png"></Image>    
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="_View">
+                    <MenuItem Header="_Full screen" Click="ShowFullScreen"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+        <Grid Margin="0,0,0,0">
+            <Button x:Name="BtnStart" Content="Start" Margin="10,10,0,0" Click="StartClick" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="206"/>
+            <Button x:Name="BtnExport" Click="ExportClk" Content="Export" Margin="10,37,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="206" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+            <Button x:Name="BtnCalibrate" Content="Calibrate" Margin="10,64,0,0" VerticalAlignment="Top" Click="BtnCalibrateClick" HorizontalAlignment="Left" Width="206" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+            <Button x:Name="BtnLampe" Content="Switch lamp" Margin="10,91,0,0" VerticalAlignment="Top" Click="BtnLampeClick" HorizontalAlignment="Left" Width="206" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+            <Button x:Name="BtnDarkMeasurement" Content="Dark measurement" Margin="10,118,0,0" VerticalAlignment="Top" Click="DarkMeasurement" HorizontalAlignment="Left" Width="206" IsEnabled="{Binding IsRunning, Converter={StaticResource BoolConvert}}" />
+            <GroupBox Header="Settings" Margin="10,145,0,0" VerticalAlignment="Top" Height="195" HorizontalAlignment="Left" Width="206">
+                <Grid HorizontalAlignment="Right" Margin="0,0,0,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Content="Average" Grid.Column="0" Grid.Row="1" Margin="0,0,5,5" HorizontalAlignment="Right"  />
+                    <TextBox x:Name="TxtAv" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="7" Margin="0,0,0,5" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+
+                    <Label Grid.Column="0" Grid.Row="2" Content="Integration time" HorizontalAlignment="Right" Margin="0,0,5,5"  />
+                    <DockPanel Grid.Row="2" Grid.Column="1" Margin="0,0,0,5">
+                        <TextBox x:Name="TxtTint" TextWrapping="Wrap" Text="40" Width="36" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+                        <Label Content="ms" />
+                    </DockPanel>
+
+                    <Label Grid.Column="0" Grid.Row="3" Content="A" Margin="0,0,5,5" HorizontalAlignment="Right" />
+                    <DockPanel Grid.Row="3" Grid.Column="1" Margin="0,0,0,5" >
+                        <TextBox x:Name="TxtAStart" Margin="0,0,5,0" TextWrapping="Wrap" Text="600" Width="36" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+                        <TextBox x:Name="TxtAEnd" TextWrapping="Wrap" Text="625" Width="36" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+                    </DockPanel>
+
+                    <Label Content="B" Grid.Column="0" Grid.Row="4" Margin="0,0,5,5" HorizontalAlignment="Right" />
+                    <DockPanel Grid.Column="1" Grid.Row="4" Margin="0,0,0,5" >
+                        <TextBox x:Name="TxtBStart" Margin="0,0,5,0" TextWrapping="Wrap" Text="750" Width="36" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+                        <TextBox x:Name="TxtBEnd" TextWrapping="Wrap" Text="775" Width="36" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+                    </DockPanel>
+
+                    <Label Grid.Column="0" Grid.Row="5" Content="Interval" HorizontalAlignment="Right" Margin="0,0,5,5"  />
+                    <DockPanel Grid.Row="5" Grid.Column="1" Margin="0,0,0,5">
+                        <TextBox x:Name="TxtInterval" TextWrapping="Wrap" Text="40" Width="36" IsEnabled="{Binding Path=IsRunning, Converter={StaticResource BoolConvert}}" />
+                        <Label Content="s" />
+                    </DockPanel>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="Output" Margin="221,10,10,0" Height="330" VerticalAlignment="Top">
+                <Label x:Name="LblOutput" />
+            </GroupBox>
+            <GroupBox Header="Graph" Margin="10,345,10,-345">
+                <oxyplot:Plot x:Name="Plot">
+                    <oxyplot:Plot.Axes>
+                        <oxyplot:LinearAxis x:Name="AxisWaveLength" Title="Wavelength (nm)" Position="Bottom" Minimum="530" Maximum="1000"/>
+                        <!--<oxyplot:LinearAxis Title="Intensity" Position="Left" Minimum="0" Maximum="4000"/>-->
+                    </oxyplot:Plot.Axes>
+                    <oxyplot:AreaSeries x:Name="AreaSeriesA" Title="A" DataFieldX2="WaveLength" DataFieldY2="Zero" DataFieldX="WaveLength" DataFieldY="Intensity" Fill="PaleGreen" Color="Transparent" ItemsSource="{Binding Source={StaticResource CVSAArea}}" />
+                    <oxyplot:AreaSeries x:Name="AreaSeriesB" Title="B" DataFieldX2="WaveLength" DataFieldY2="Zero" DataFieldX="WaveLength" DataFieldY="Intensity" Fill="PaleVioletRed" Color="Transparent" ItemsSource="{Binding Source={StaticResource CVSBArea}}" />
+                    <oxyplot:LineSeries x:Name="PltLineSeries" Title="Measurement" DataFieldX="WaveLength" DataFieldY="Intensity" ItemsSource="{Binding Source={StaticResource CVSMeasurements}}" />
+                    <oxyplot:LineSeries x:Name="PltDarkLineSeries" Title="Dark Measurement" DataFieldX="WaveLength" DataFieldY="Intensity" ItemsSource="{Binding Source={StaticResource CVSDarkMeasurements}}" />
+                </oxyplot:Plot>
+            </GroupBox>
+            <Grid x:Name="LoadingBar" Visibility="Hidden" Margin="0,0,0,0">
+                <Grid.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </Grid.Background>
+                <Border BorderBrush="Black" Padding="3" BorderThickness="1"  HorizontalAlignment="Center" VerticalAlignment="Center" Background="White" >
+                    <StackPanel>
+                        <Label Content="Loading" x:Name="LblLoading" HorizontalAlignment="Center"/>
+                        <ProgressBar Height="26" IsIndeterminate="True" Width="300"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</Window>

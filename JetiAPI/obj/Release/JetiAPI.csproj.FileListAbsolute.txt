@@ -1,0 +1,4 @@
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\bin\Release\JetiAPI.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\bin\Release\JetiAPI.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\obj\Release\JetiAPI.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\obj\Release\JetiAPI.pdb

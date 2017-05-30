@@ -1,0 +1,7 @@
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\UnitTest\bin\Debug\JetiAPI.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\UnitTest\bin\Debug\JetiAPI.pdb

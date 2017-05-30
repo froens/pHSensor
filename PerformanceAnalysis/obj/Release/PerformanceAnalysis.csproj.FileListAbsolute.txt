@@ -1,0 +1,8 @@
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\bin\Release\PerformanceAnalysis.exe.config
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\bin\Release\PerformanceAnalysis.exe
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\bin\Release\PerformanceAnalysis.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\bin\Release\JetiAPI.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\bin\Release\JetiAPI.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\obj\Release\PerformanceAnalysis.csprojResolveAssemblyReference.cache
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\obj\Release\PerformanceAnalysis.exe
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\PerformanceAnalysis\obj\Release\PerformanceAnalysis.pdb

@@ -1,0 +1,13 @@
+C:\Users\fos\Dropbox\Spektrometer\oxyplot\Output\NET40\OxyPlot.XML
+C:\Users\fos\Dropbox\Spektrometer\oxyplot\Output\NET40\OxyPlot.dll
+C:\Users\fos\Dropbox\Spektrometer\oxyplot\Output\NET40\OxyPlot.pdb
+C:\Users\fos\Dropbox\Spektrometer\oxyplot\Source\OxyPlot\obj\Release\NET40\OxyPlot_NET40.csprojResolveAssemblyReference.cache
+C:\Users\fos\Dropbox\Spektrometer\oxyplot\Source\OxyPlot\obj\Release\NET40\OxyPlot.dll
+C:\Users\fos\Dropbox\Spektrometer\oxyplot\Source\OxyPlot\obj\Release\NET40\OxyPlot.pdb
+C:\Users\fos\Dropbox\Spektrometer\Output\NET40\OxyPlot.XML
+C:\Users\fos\Dropbox\Spektrometer\Output\NET40\OxyPlot.dll
+C:\Users\fos\Dropbox\Spektrometer\Output\NET40\OxyPlot.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\OxyPlot\bin\Release\OxyPlot.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\OxyPlot\bin\Release\OxyPlot.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\OxyPlot\obj\Release\NET40\OxyPlot.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\OxyPlot\obj\Release\NET40\OxyPlot.pdb

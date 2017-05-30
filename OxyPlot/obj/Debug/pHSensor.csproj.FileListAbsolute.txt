@@ -1,0 +1,65 @@
+c:\users\frederik\documents\visual studio 2012\Projects\pHSensor\pHSensor\bin\Debug\pHSensor.exe.config
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\pHSensor.exe
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\pHSensor.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\MainWindow.baml
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\MainWindow.g.cs
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\App.g.cs
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor_MarkupCompile.cache
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.g.resources
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.Properties.Resources.resources
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.csproj.GenerateResource.Cache
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.exe
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\NationalInstruments.DAQmx.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\NationalInstruments.Common.Native.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\NationalInstruments.DAQmx.xml
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor_MarkupCompile.lref
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.csprojResolveAssemblyReference.cache
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor_Content.g.cs
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\GeneralMatrix.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\Net.Kniaz.LMA.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\Net.Kniaz.LMA.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.Wpf.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.Xps.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.xml
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.Wpf.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.Wpf.xml
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.Xps.pdb
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\OxyPlot.Xps.xml
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\dlls\GeneralMatrix.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\pHSensor.exe.manifest
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\pHSensor.application
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\NationalInstruments.Common.dll
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\bin\Debug\NationalInstruments.Common.xml
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.exe.manifest
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\pHSensor.application
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\CalibrateWindow.baml
+C:\Users\Frederik\Documents\Visual Studio 2012\Projects\pHSensor\pHSensor\obj\Debug\CalibrateWindow.g.cs
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\pHSensor.exe.config
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\pHSensor.exe
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\pHSensor.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\GeneralMatrix.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\JetiAPI.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\Net.Kniaz.LMA.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\OxyPlot.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\OxyPlot.Wpf.dll
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\JetiAPI.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\Net.Kniaz.LMA.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\OxyPlot.Wpf.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\bin\Debug\OxyPlot.pdb
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\pHSensor.csprojResolveAssemblyReference.cache
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\CalibrateWindow.baml
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\PHFullScreen.baml
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\CalibrateWindow.g.cs
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\MainWindow.g.cs
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\PHFullScreen.g.cs
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\App.g.cs
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\pHSensor_MarkupCompile.cache
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\pHSensor_MarkupCompile.lref
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\MainWindow.baml
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\pHSensor.g.resources
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\pHSensor.exe
+C:\Users\fos\Dropbox\Spektrometer\pHSensor\pHSensor\obj\Debug\pHSensor.pdb
