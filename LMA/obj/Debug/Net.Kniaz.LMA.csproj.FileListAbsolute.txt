@@ -17,4 +17,3 @@ C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\bin\Debug\Net.Kniaz.LMA.pdb
 C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\bin\Debug\GeneralMatrix.dll
 C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\obj\Debug\Net.Kniaz.LMA.dll
 C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\obj\Debug\Net.Kniaz.LMA.pdb
-C:\Users\fos\Dropbox\Spektrometer\pHSensor\LMA\obj\Debug\Net.Kniaz.LMA.csprojResolveAssemblyReference.cache

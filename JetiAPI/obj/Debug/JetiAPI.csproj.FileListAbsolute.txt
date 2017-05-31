@@ -2,4 +2,3 @@ C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\bin\Debug\JetiAPI.dll
 C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\bin\Debug\JetiAPI.pdb
 C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\obj\Debug\JetiAPI.dll
 C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\obj\Debug\JetiAPI.pdb
-C:\Users\fos\Dropbox\Spektrometer\pHSensor\JetiAPI\obj\Debug\JetiAPI.csprojResolveAssemblyReference.cache

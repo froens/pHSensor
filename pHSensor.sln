@@ -11,11 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JetiAPI", "JetiAPI\JetiAPI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceAnalysis", "PerformanceAnalysis\PerformanceAnalysis.csproj", "{15BE89B8-3ADD-4197-9E1F-57F597F24D23}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D57723D-5024-4C73-847F-A1C687A5940D}"
-	ProjectSection(SolutionItems) = preProject
-		Performance1.psess = Performance1.psess
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxyPlot_NET40", "OxyPlot\OxyPlot_NET40.csproj", "{1C1D9807-BE39-40A4-87DE-3F81E7C651E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxyPlot.Wpf_NET40", "OxyPlot.Wpf\OxyPlot.Wpf_NET40.csproj", "{0D7C7710-C58B-4713-BA18-8231A2F35A12}"
